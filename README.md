@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Nodejs is required to debug this project click the below link and download current version.
+
+https://nodejs.org/en/
+
+After installing Nodejs navigate into the project directory and run the following command to install all the dependencies  
+
+### `npm install`
+
 ## Available Scripts
 
 In the project directory, you can run:
