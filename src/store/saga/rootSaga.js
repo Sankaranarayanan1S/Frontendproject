@@ -7,8 +7,6 @@ function* invokeAPIHandler(action) {
       call(getAllCategories),
       call(getAllCourses),
     ]);
-    console.log("Courses  ==== >");
-    console.log(apiResponse);
     if (categoryList.data.payload) {
       const resultList = JSON.parse(categoryList.data.payload);
       yield put({ type: "CATEGORY_RESPONSE_RECEIVED", payload: resultList });

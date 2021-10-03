@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { appReducer } from "./store/reducers/appReducer";
 import root from "./store/saga/rootSaga";
+import classes from "./index.module.css";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const reducers = combineReducers({
@@ -23,7 +24,7 @@ sagaMiddleware.run(root); //root-saga
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <App className={classes.body} />
   </Provider>,
   document.getElementById("root")
 );
